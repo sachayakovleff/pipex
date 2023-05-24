@@ -6,7 +6,7 @@
 /*   By: syakovle <syakovle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 14:51:14 by syakovle          #+#    #+#             */
-/*   Updated: 2023/04/11 15:51:52 by syakovle         ###   ########.fr       */
+/*   Updated: 2023/05/24 17:38:09 by syakovle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 void	ft_err(char *err)
 {
-	ft_printf(err);
-	ft_printf("\n");
+	ft_printf("\033[0;31m %s", err);
 	exit(0);
 }
 

@@ -1,0 +1,6 @@
+childs.c
+error.c
+free.c
+getcmd.c
+getcmd.o
+pipex.c

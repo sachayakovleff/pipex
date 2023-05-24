@@ -6,7 +6,7 @@
 /*   By: syakovle <syakovle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 14:44:52 by syakovle          #+#    #+#             */
-/*   Updated: 2023/04/26 03:48:07 by syakovle         ###   ########.fr       */
+/*   Updated: 2023/05/24 17:37:38 by syakovle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,14 @@
 # include <fcntl.h>
 # include <sys/wait.h>
 
-# define ERR_RFILE "Cannot read file, does it exist ? \n"
-# define ERR_WFILE "Cannot write in file, does it exist ? \n"
-# define ERR_CMD1   "Cannot find first command\n"
-# define ERR_CMD2   "Cannot find second command\n"
-# define ERR_OPEN  "Cannot open file \n"
+# define ERR_RFILE "\033[0;31mCannot read file, does it exist ? \n"
+# define ERR_WFILE "\033[0;31mCannot write in file, does it exist ? \n"
+# define ERR_CMD1   "\033[0;31mCannot find first command\n"
+# define ERR_CMD2   "\033[0;31mCannot find second command\n"
+# define ERR_OPEN  "\033[0;31mCannot open file \n"
 # define ERR_EXEC  "Cannot execute command, do you have the right access ? \n"
-# define ERR_INPUT "Invalid input\nSyntax: ./pipex <file1> <cmd1> <cmd2> <file2>"
-# define ERR_PIPE  "Pipe"
+# define ERR_INPUT "Invalid input\nsyntax:./pipex <file1> <cmd1> <cmd2> <file2>\n"
+# define ERR_PIPE  "\033[0;31mPipe\n"
 
 typedef struct s_pipex
 {
